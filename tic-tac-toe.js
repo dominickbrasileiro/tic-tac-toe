@@ -24,8 +24,13 @@ const tic_tac_toe = {
     },
 
     make_play: function(position){
-        this.board[position] = this.symbol.turn();
-        this.draw();
+        if (this.board[position] === "") {
+            this.board[position] = this.symbol.turn();
+            this.draw();
+        }
+
+        return false;
+
     },
 
     draw: function(){
