@@ -30,3 +30,17 @@ body {
     background: #34495e;
     cursor: pointer;
 }
+
+.restart-button {
+    padding: 10px 20px;
+    border: 3px solid black;
+    background: transparent;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.restart-button:hover {
+    background: black;
+    color: white;
+}
