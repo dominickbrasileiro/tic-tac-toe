@@ -1,6 +1,6 @@
 const tic_tac_toe = {
 
-    board: ["","","","","","","","",""],
+    board: new Array(9),
     symbol: {
         options: ["X", "O"],
         index: 0,
@@ -29,7 +29,7 @@ const tic_tac_toe = {
 
     init: function(container){
         this.container_element = container;
-        this.draw();
+        this.start();
     },
 
     start: function(){
